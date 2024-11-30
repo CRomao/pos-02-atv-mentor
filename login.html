@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mentorr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <main class="flex flex-col gap-6 sm:flex-row sm:h-screen sm:gap-0">
+        <!-- Seção do logo -->
+        <section class="relative flex flex-col bg-slate-900 justify-center items-start h-14 sm:items-center sm:w-1/4 sm:h-screen">
+            <div class="flex justify-center">
+                <a href="index.html">
+                    <figure>
+                        <img src="img/logo-icon.svg" alt="Logo Mentorr" class=" w-2/4 sm:w-24">                    
+                    </figure>                
+                </a>
+            </div>
+            <a href="index.html" class="absolute bottom-4 left-4 text-slate-500 hidden sm:block hover:text-white">mentorr.com.br</a>
+        </section>
+        
+        <!-- Seção do formulário de login -->
+        <section class="mx-auto my-auto sm:w-2/4">
+            <div class="flex flex-col gap-6">
+                <h3 class="text-lg font-bold">Log In</h3>
+                <div class="flex">
+                    <button class="bg-white px-12 font-medium text-blue-600 py-4 border-b-2 border-blue-600 w-1/2">Sou cliente</button>
+                    <button class="bg-white px-12 font-medium text-slate-400 py-4 border-b-2 border-slate-400 w-1/2 hover:text-blue-600 hover:border-blue-600">Sou mentor</button>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm text-gray-700">E-mail</label>
+                            <input class="border-2 px-4 py-2 rounded-lg" placeholder="Insira seu usuário ou e-mail">
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm text-gray-700">Senha</label>
+                            <input type="password" class="border-2 px-4 py-2 rounded-lg mb-4" placeholder="******"> 
+                        </div>
+                    </div>                   
+
+                    <div class="flex flex-col gap-3">
+                        <button class="bg-blue-600 text-white text-md text-bold py-3 rounded-lg hover:bg-blue-700">Logar</button>
+                    
+                        <span class="flex justify-center">ou</span>
+
+                        <button class="flex justify-center gap-4 border-2 py-2 rounded-lg hover:bg-slate-200">
+                            <img src="img/google-icon.svg" alt="Ícone do Google">
+                            <span class="text-gray-600">Entrar com o Google</span>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <a class="text-blue-700 underline decoration-solid decoration-blue-700" href="#"> Esqueci a senha</a>
+                        <p>Ainda não tem uma conta?</p>
+                        <a class="text-blue-700 underline decoration-solid decoration-blue-700" href="#">Crie uma conta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
